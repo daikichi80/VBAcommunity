@@ -1,0 +1,546 @@
+body {
+  background-color: #CBE4C1;
+}
+
+/* 
+-------------------
+共通部分
+-------------------
+*/
+.content__wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.section__title {
+  width: 300px;
+  height:30px;
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 20px;
+  border: solid 1px #707070;
+  margin-top: 20px;
+}
+
+
+/* font */
+.large{
+  font-size: 18px;
+  line-height: 27px;
+}
+.bold{
+  font-weight: bold;
+}
+.text__pink {
+  color: #FA50D3;
+}
+.text__green {
+  color:#1CB53B;
+}
+
+/* twitterボタン */
+
+.twitter__btn {
+  width: 180px;
+  height: 35px;
+  background-color: #fff;
+  font-size: 8px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  border: solid 1px #707070;
+}
+
+.twitter__btn img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top:21%;
+}
+
+.twitter__btn a {
+  position: absolute;
+  top: 2px;
+  left: 30px;
+}
+.account {
+  color: #4DA1E4;
+}
+
+.twitter__btn:hover {
+ overflow: hidden;
+ background-image: linear-gradient(45deg, #fff 0%, #91fdb7 100%);
+}
+
+/*
+-----------------
+header始まり 
+-----------------
+*/
+.header__img {
+  width: 100%;
+  height: 250px;
+  background-image: url(../images/fran-innocenti-HRfvMO9I69U-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center center;
+  position: relative;
+}
+
+/* header画像に黒を少し足す */
+.header__img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #061527;
+  opacity: .7;
+}
+
+.header__wrapper {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+
+}
+.title {
+  font-size: 22px;
+  color: #22FF66;
+}
+.header__title {
+  color:#fff;
+  font-size: 22px;
+}
+.text__ivory {
+  color: #FAF8CB;
+}
+
+/* header ペンギン */
+.penguin {
+  width: 90px;
+  height: 90px;
+}
+
+
+
+/* 
+---------------
+section intro
+---------------
+*/
+
+.intro__bg {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 
+-----------------
+section community
+-----------------
+*/
+.community__left img{
+  display: block;
+  margin: 36px auto 0px;
+  width: 200px;
+  height: 200px;
+}
+
+.community__left p {
+  margin: 10px auto;
+  padding: 0;
+}
+
+.text__wrapper {
+  width: 230px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 35px;
+  padding: 24px 9px;
+  margin-bottom: 30px;
+}
+
+/* 
+------------------
+section join
+------------------
+*/
+.link {
+  color:#4DA1E4;
+  text-decoration-line: underline;
+}
+
+/* 
+--------------
+top-btn
+--------------
+*/
+
+.back {
+  position: relative;
+  margin: 0 left;
+}
+.allow {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: -50px;
+  left: 325px;
+}
+
+
+.back{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 15px;
+  bottom:60px;
+  background: #3fefee;
+  opacity: 0.6;
+  border-radius: 50%;
+  }
+.back >.allow{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+.back a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f062';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+.back:active{
+  opacity: 1;
+}
+
+/* 
+------------------
+footer
+------------------
+*/
+
+footer {
+  background-color: #eee;
+  margin-top: 30px;
+}
+
+footer P{
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+
+/* 
+-----------------------
+レスポンシブ対応
+-----------------------
+*/
+
+@media (min-width:1095px){
+
+
+  /* 改行位置修正 */
+.sp__br{
+  display: none;
+}
+
+.pc__br{
+  display: block;
+}
+
+/* コンテンツ幅修正 */
+
+.content__wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* フォントサイズ変更 */
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.bold{
+  font-size: 24px;
+}
+
+.pc__large {
+  font-size: 22px;
+  line-height: 54px;
+}
+
+/* セクションタイトル修正*/
+.section__title {
+  width: 1080px;
+  height:75px;
+  font-size: 42px;
+  line-height: 75px;
+  border-radius: 50px;
+  margin-top: 80px;
+}
+
+/* 
+--------------------
+header
+--------------------
+*/
+
+.header__wrapper {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.header__img {
+  height: 640px;
+}
+
+.header__wrapper {
+  padding-top: 150px;
+  margin: auto;
+}
+
+.title {
+  font-size: 56px;
+  color: #22FF66;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.header__title {
+  color:#fff;
+  font-size: 72px;
+  line-height: 150px;
+}
+.text__ivory {
+  color: #FAF8CB;
+}
+
+.penguin {
+  width: 300px;
+  height: 300px;
+}
+
+.twitter__btn {
+  width: 330px;
+  font-size: 12px;
+}
+
+.twitter__btn a {
+  position: absolute;
+  top: 6px;
+  left: 37px;
+}
+
+/* 
+------------------
+intro
+------------------
+*/
+
+.intro {
+  position: relative;
+}
+
+.intro__wrapper {
+  margin-top: 80px;
+}
+
+
+.intro__text--wrapper{
+  margin-top: 320px;
+  text-align: center;
+  transform: translate(350px);
+  margin-bottom: 200px;
+}
+
+.bg-right {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 350px;
+  right: 32px;
+  z-index: -1;
+}
+
+.bg-left {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 32px;
+  top:1500px;
+  z-index: -1;
+}
+
+
+/* 
+---------------
+community
+---------------
+*/
+.community {
+ padding-top: 30px;
+}
+
+.community__wrapper {
+  display: flex;
+  margin-top: 80px;
+}
+
+.community__left img {
+  width: 480px;
+  height: 480px;
+}
+
+.community__left p {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.text__wrapper {
+  width: 520px;
+  height: 520px;
+  margin-left: 35px;
+  padding:0 22px 0 22px;
+  position: absolute;
+  top: 2415px;
+}
+
+.community .twitter__btn {
+  margin-top: 80px;
+}
+
+/* 
+----------
+join
+----------
+*/
+.join__text {
+  text-align: center;
+}
+
+/* 
+-----------
+rule
+-----------
+*/
+
+.rule__subtitle {
+  text-align: center;
+  margin: 80px 0 80px 0;
+}
+
+.rule__text {
+  text-align: center;
+}
+
+.rule {
+  margin-bottom: 200px;
+}
+
+/* 
+--------------
+last
+--------------
+*/
+
+.last__text {
+  text-align: center;
+}
+
+
+.back{
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  right: 15px;
+  bottom:200px;
+  background: #3fefee;
+  opacity: 0.6;
+  border-radius: 50%;
+  }
+.back >.allow{
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  text-decoration: none;
+}
+.back a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f062';
+  font-size: 120px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -90px;
+  bottom: 0;
+  right: 75px;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.back:hover {
+  opacity: 1;
+}
+
+
+
+footer p{
+  text-align: center;
+  font-size: 18px;
+}
+
+}
+
+
