@@ -19,7 +19,7 @@ p {
 }
 
 .section__title {
-  width: 300px;
+  width: 100%;
   height:30px;
   background-color: #fff;
   font-size: 12px;
@@ -82,6 +82,17 @@ p {
  background-image: linear-gradient(45deg, #fff 0%, #91fdb7 100%);
 }
 
+
+.pc__br {
+  display: none;
+}
+.sp__br {
+  display: block;
+}
+
+ .pc__br2 {
+    display: none;
+  }
 /*
 -----------------
 header始まり 
@@ -272,11 +283,12 @@ footer P{
 レスポンシブ対応
 -----------------------
 */
-
-@media (min-width:1095px){
+/* 1080pxを超えると以下を適用 */
+@media screen and (min-width:1080px){
 
 
   /* 改行位置修正 */
+  /* sp版の改行を無視、PC版の改行を適用 */
 .sp__br{
   display: none;
 }
@@ -288,7 +300,7 @@ footer P{
 /* コンテンツ幅修正 */
 
 .content__wrapper {
-  width: 1080px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -311,17 +323,17 @@ p {
 
 /* セクションタイトル修正*/
 .section__title {
-  width: 1080px;
+  width: 100%;
   height:75px;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 75px;
   border-radius: 50px;
-  margin-top: 80px;
+  margin: 80px 0 80px 0;
 }
 
 /* 
 --------------------
-header
+headerの修正
 --------------------
 */
 
@@ -356,8 +368,8 @@ header
 
 .header__title {
   color:#fff;
-  font-size: 72px;
-  line-height: 150px;
+  font-size: 56px;
+  line-height: 72px;
 }
 .text__ivory {
   color: #FAF8CB;
@@ -367,6 +379,13 @@ header
   width: 300px;
   height: 300px;
 }
+
+/* 
+----------------
+twitterボタン修正
+----------------
+*/
+
 
 .twitter__btn {
   width: 330px;
@@ -381,7 +400,7 @@ header
 
 /* 
 ------------------
-intro
+introセクション修正
 ------------------
 */
 
@@ -391,52 +410,61 @@ intro
 
 .intro__wrapper {
   margin-top: 80px;
+  width: 100%;
+}
+
+.intro__text {
+  margin-bottom: 30px;
 }
 
 
 .intro__text--wrapper{
-  margin-top: 320px;
+  margin-top: 200px;
   text-align: center;
-  transform: translate(350px);
+  transform: translate(250px);
   margin-bottom: 200px;
 }
 
+/* 男性写真位置修正 */
 .bg-right {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   top: 350px;
-  right: 32px;
+  right: 50px;
   z-index: -1;
 }
-
+/* 女性位置修正 */
 .bg-left {
   position: absolute;
-  width: 600px;
-  height: 600px;
-  left: 32px;
-  top:1500px;
+  width: 500px;
+  height: 500px;
+  left: 50px;
+  top:1600px;
   z-index: -1;
 }
 
 
 /* 
 ---------------
-community
+communityセクション
 ---------------
 */
 .community {
- padding-top: 30px;
+ padding-top: 50px;
 }
 
 .community__wrapper {
   display: flex;
+  justify-content: flex-start;
   margin-top: 80px;
+  width: 100%;
 }
 
 .community__left img {
-  width: 480px;
-  height: 480px;
+  width: 425px;
+  height: 425px;
+  margin: 0;
 }
 
 .community__left p {
@@ -445,12 +473,14 @@ community
 }
 
 .text__wrapper {
-  width: 520px;
-  height: 520px;
-  margin-left: 35px;
+  width: calc(425px - 44px);
+  height:475px;
   padding:0 22px 0 22px;
-  position: absolute;
-  top: 2415px;
+  margin-left: 50px;
+}
+
+.text__wrapper p{
+  font-size: 14px;
 }
 
 .community .twitter__btn {
@@ -459,7 +489,7 @@ community
 
 /* 
 ----------
-join
+joinセクション修正
 ----------
 */
 .join__text {
@@ -468,7 +498,7 @@ join
 
 /* 
 -----------
-rule
+ruleセクション修正
 -----------
 */
 
@@ -479,6 +509,7 @@ rule
 
 .rule__text {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .rule {
@@ -493,41 +524,41 @@ last
 
 .last__text {
   text-align: center;
+  margin-bottom: 40px;
 }
+
+.message {
+  margin: 80px 0;
+}
+
+
+/* 
+---------------
+上へ戻るボタン修正
+---------------
+*/
 
 
 .back{
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
   position: fixed;
   right: 15px;
   bottom:200px;
-  background: #3fefee;
-  opacity: 0.6;
-  border-radius: 50%;
+  
   }
 .back >.allow{
-  position: relative;
-  display: block;
-  width: 200px;
-  height: 200px;
-  text-decoration: none;
+  width: 125px;
+  height: 125px;
+
 }
 .back a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f062';
-  font-size: 120px;
-  color: #fff;
+  font-size: 100px;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: -90px;
-  bottom: 0;
-  right: 75px;
-  left: 0;
-  margin: auto;
-  text-align: center;
+  top: -85px;
+  right: 60px;
 }
 
 .back:hover {
@@ -544,3 +575,21 @@ footer p{
 }
 
 
+/*
+ スクリーンサイズが1500px以上 
+のときヘッダータイトル修正
+*/
+
+@media screen and (min-width:1500px){
+  .header__title {
+    font-size: 72px;
+  }
+
+  .pc__br {
+    display: none;
+  }
+
+  .pc__br2{
+    display: block;
+  }
+}
