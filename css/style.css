@@ -73,6 +73,7 @@ p {
   position: absolute;
   top: 2px;
   left: 30px;
+  text-align: center;
 }
 .account {
   color: #4DA1E4;
@@ -222,31 +223,31 @@ top-btn
 
 
 .back{
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   right: 15px;
   bottom:60px;
   background: #3fefee;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 50%;
   }
 .back >.allow{
   position: relative;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   text-decoration: none;
 }
 .back a::before{
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   content: '\f062';
-  font-size: 25px;
+  font-size: 50px;
   color: #fff;
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   top: 0;
   bottom: 0;
   right: 0;
