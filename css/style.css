@@ -301,6 +301,10 @@ footer P{
   display: block;
 }
 
+.pc__br2 {
+  display: none;
+}
+
 /* コンテンツ幅修正 */
 
 .content__wrapper {
@@ -587,6 +591,10 @@ footer p{
 @media screen and (min-width:1500px){
   .header__title {
     font-size: 72px;
+  }
+
+  .sp__br {
+    display: none;
   }
 
   .pc__br {
